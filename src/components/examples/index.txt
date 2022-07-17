@@ -1,0 +1,39 @@
+<script setup lang="ts">
+import CodeBlock from "@/components/global/CodeBlock.vue";
+import ExampleBlock from "@/components/global/ExampleBlock.vue";
+import { links } from "@/assets/ts";
+
+const code = `
+import { ref } from "vue";
+
+`;
+</script>
+
+<template>
+  <!--  -->
+  <ExampleBlock :idx="0" :exampleName="links[0].label">
+    <template v-slot:explanation>
+      <!-- <div>qwe</div> -->
+    </template>
+
+    <template v-slot:code>
+      <CodeBlock :code="code" filename="Parent.vue" />
+    </template>
+
+    <template v-slot:_component>
+      <!-- <Parent /> -->
+    </template>
+  </ExampleBlock>
+</template>
+
+
+
+<script setup lang="ts">
+defineProps<{
+  msg: string;
+}>();
+</script>
+
+<template>
+
+</template>
