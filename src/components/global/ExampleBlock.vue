@@ -16,7 +16,7 @@ defineProps<{
       <hr class="hr-1-3 mb-2.5 mt-1" />
       <h6 class="fw-700">{{ exampleName }}</h6>
     </div>
-    <div class="max-w-[660px] mt-4 mb-7 fs-8 fw-300">
+    <div class="max-w-[660px] mt-4 mb-7 fs-8 fw-400">
       <slot name="explanation" />
     </div>
     <div class="grid grid-cols-2 gap-4 mt-1.5 md:grid-cols-1">
