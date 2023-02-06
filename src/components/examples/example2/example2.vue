@@ -5,8 +5,7 @@ import { links } from "@/assets/ts";
 import Parent from "./Parent.vue";
 
 const code = `
-import { ref } from "vue";
-`;
+import { ref } from "vue";`;
 
 const _parent_code = `
 import { ref } from "vue";
@@ -42,6 +41,7 @@ defineProps<{
 }>();
 
 defineEmits(["switch_value"]);`;
+
 const _child_tmpl = `
 <div v-if="is_shown">
   <div class="border border-black py-3">

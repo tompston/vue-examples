@@ -21,14 +21,12 @@ function setTheme() {
 }
 onMounted(() => {
   setTheme();
-});
-`;
+});`;
 
 const template = `
 <button id="theme-switcher" ref="themeSwitch" @click="switchTheme()" class="button__1">
   Switch Theme
-</button>
-`;
+</button>`;
 </script>
 
 <template>

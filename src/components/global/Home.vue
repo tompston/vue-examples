@@ -5,18 +5,12 @@ import { links, slugify } from "@/assets/ts";
 <template>
   <div>
     <div class="max-w-[640px] mb-12 fw-600">
-      <div class="fs-8 opacity-80-- leading-6">
+      <div class="fs-8 opacity-80 leading-6">
         Learned a couple of things while making
-        <a href="https://gomarvin.pages.dev/" target="_blank" rel="noopener noreferrer"
-          >gomarvin editor</a
-        >. Some of theses tips / snippets could be classified as semi-advanced (aka hard
+        <a href="https://gomarvin.pages.dev/" target="_blank" rel="noopener noreferrer">gomarvin editor</a>. Some of
+        theses tips / snippets could be classified as semi-advanced (aka hard
         to find how to do properly online). Full code can be found
-        <a
-          href="https://github.com/tompston/vue-examples"
-          target="_blank"
-          rel="noopener noreferrer"
-          >here</a
-        >.
+        <a href="https://github.com/tompston/vue-examples" target="_blank" rel="noopener noreferrer">here</a>.
       </div>
     </div>
 

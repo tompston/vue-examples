@@ -30,4 +30,9 @@ export const links: Link[] = [
     link: "/example-5",
     label: "Timed Popups with Transitions",
   },
+  {
+    index: 6,
+    link: "/example-6",
+    label: "Passing down a single element to a component",
+  },
 ];

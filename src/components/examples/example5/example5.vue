@@ -48,8 +48,7 @@ const style = `
 .fade-enter-from,
 .fade-leave-to {
   opacity: 0;
-}
-`;
+}`;
 </script>
 
 <template>

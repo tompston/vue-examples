@@ -1,7 +1,7 @@
 <script setup lang="ts">
 defineProps<{
   filename: string;
-  code: string;
+  code?: string;
   style?: string;
   template?: string;
 }>();
@@ -13,15 +13,18 @@ defineProps<{
 
     <div>
       <pre class="grid grid-cols-1 overflow-y-hidden">
-        <div class="tag__name">Script</div>
-        <code class="">{{code}}</code>
+
+        <div v-if="code">
+          <div class="tag__name">Script</div>
+          <code class="">{{ code }}</code>
+        </div>
         <div v-if="template">
           <div class="tag__name">Template</div>
-          <code class="language-html">{{template}}</code>
+          <code class="language-html">{{ template }}</code>
         </div>
         <div v-if="style">
           <div class="tag__name">Style</div>
-          <code class="">{{style}}</code>
+          <code class="">{{ style }}</code>
         </div>
       </pre>
     </div>
@@ -44,7 +47,8 @@ pre code {
 }
 
 .tag__name {
-  margin-top: 10px;
+  /* margin-top: 10px; */
+  /* margin-bottom: 10px; */
   background: var(--code-bg);
   border-radius: var(--border-rad-4);
   padding: 6px 13px;

@@ -5,9 +5,7 @@ import { links } from "@/assets/ts";
 import Parent from "./Parent.vue";
 
 const code = `
-import { ref } from "vue";
-
-`;
+import { ref } from "vue";`;
 
 const _parent_code = `
 import Child from "./Child.vue";
@@ -27,43 +25,35 @@ const _parent_tmpl = `
 const _child_code = `
 defineProps<{
   header: string;
-}>();
-`;
+}>();`;
 const _child_tmpl = `
 <div class="border-1-2 m-2">
   <h5>{{ header }}</h5>
 
   <slot name="custom_component" />
-</div>
-`;
+</div>`;
 
 const _button_code = `
 defineProps<{
   text: string;
-}>();
-`;
+}>();`;
 const _button_tmpl = `
-<button class="p-3 fs-10 fw-600 bg-gray-600 text-white m-2">{{ text }}</button>
-`;
+<button class="p-3 fs-10 fw-600 bg-gray-600 text-white m-2">{{ text }}</button>`;
 </script>
 
 <template>
   <ExampleBlock :idx="4" :exampleName="links[3].label">
     <template v-slot:explanation>
       <div>
-        Couldn't find a way pass components as a prop, like in React. One way to do that
-        still, is by using <code class="code__1">slots</code> elements.
+        Example that shows how to pass multiple elements to an existing component, using <code
+          class="code__1">slots</code>.
 
         <br />
         <br />
 
         Link to the official
-        <a
-          href="https://vuejs.org/guide/components/slots.html"
-          target="_blank"
-          rel="noopener noreferrer"
-          >explanation</a
-        >.
+        <a href="https://vuejs.org/guide/components/slots.html" target="_blank"
+          rel="noopener noreferrer">explanation</a>.
       </div>
     </template>
 

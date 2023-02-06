@@ -11,6 +11,7 @@ Using vite, typescript and tailwind.
 - CSS Theme Switcher using localstorage
 - Passing components to components as a prop
 - Timed Popups with Transitions
+- Passing down a single element to a component
 
 ## commands
 

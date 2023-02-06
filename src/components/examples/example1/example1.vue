@@ -29,8 +29,7 @@ function Capitalized_RemovedWhitespace(x: string): string {
   return removedWhitespace(x.toUpperCase());
 }
 
-const user_input = ref("");
-`;
+const user_input = ref("");`;
 
 const template = `
 <input
@@ -56,11 +55,8 @@ const template = `
   placeholder="user_input"
   v-model="user_input"
   @input="user_input = ConvertToValidValue($event, Capitalized_RemovedWhitespace)"
-/>
-`;
+/>`;
 
-const style = `
-`;
 </script>
 
 <template>
@@ -69,13 +65,13 @@ const style = `
     <template v-slot:explanation>
       <div>
         Let's say we have an input field, that is binded to a
-        <code class="code__1">ref</code> variable and we want to change the input value to
-        escape unwanted characters. An easy way to do this is by passing the event target
-        value through a reusable utility function that converts and returns a new string,
-        once the user changes the input. We can convert the input by using either regex
-        patterns or the built in JS functions. If we create multiple util functions that
-        return a new string, we can stack them to create even more custom input
-        validation.
+        <code class="code__1">ref</code> variable and we want to change the
+        input value to escape unwanted characters. An easy way to do this is by
+        passing the event target value through a reusable utility function that
+        converts and returns a new string, once the user changes the input. We
+        can convert the input by using either regex patterns or the built in JS
+        functions. If we create multiple util functions that return a new
+        string, we can stack them to create even more custom input validation.
 
         <br />
         <br />
